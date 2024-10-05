@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host Sign Up - Career Explorer</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Host Sign Up</h1>
+    <form id="hostSignupForm">
+        <input type="text" name="eventName" placeholder="Event Name" required>
+        <input type="text" name="organizerName" placeholder="Organizer's Name" required>
+        <input type="text" name="location" placeholder="Location" required>
+        <div class="point-of-contact">
+            <h2>Point of Contact</h2>
+            <input type="text" name="pocName" placeholder="Name" required>
+            <input type="tel" name="pocPhone" placeholder="Phone Number" required>
+            <input type="email" name="pocEmail" placeholder="Email" required>
+            <input type="text" name="pocDesignation" placeholder="Designation" required>
+        </div>
+        <input type="file" accept="image/*" required>
+        <h2>Details</h2>
+        <select name="freePaid" required>
+            <option value="">Free/Paid</option>
+            <option value="free">Free</option>
+            <option value="paid">Paid</option>
+        </select>
+        <select name="location" required>
+            <option value="">Location</option>
+            <option value="remote">Remote</option>
+            <option value="onsite">On-site</option>
+        </select>
+        <select name="category" required>
+            <option value="">Category</option>
+            <option value="summerSchool">Summer School</option>
+            <option value="competitions">Competitions</option>
+            <option value="volunteering">Volunteering</option>
+            <option value="hackathons">Hackathons</option>
+            <option value="internships">Internships</option>
+        </select>
+        <input type="text" name="interests" placeholder="Interests (comma-separated)" required>
+        <input type="date" name="regStartDate" placeholder="Registration Start Date" required>
+        <input type="date" name="regEndDate" placeholder="Registration End Date" required>
+        <input type="number" name="duration" placeholder="Duration (in days)" required>
+        <input type="text" name="eligibility" placeholder="Eligibility Requirements" required>
+        <input type="number" name="prizeAmount" placeholder="Prize Amount" required>
+        <select name="stream" required>
+            <option value="">Select Stream</option>
+            <option value="science">Science</option>
+            <option value="commerce">Commerce</option>
+            <option value="arts">Arts</option>
+        </select>
+        <textarea name="description" placeholder="Description" required></textarea>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit" class="btn">Sign Up</button>
+    </form>
+</div>
+<script src="../main.js"></script>
+</body>
+</html>

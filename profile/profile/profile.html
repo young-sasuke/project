@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile - Career Explorer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">Career Explorer</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="search.html">Search</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="#" id="logout-button">Log Out</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="profile-container">
+    <div class="user-info">
+      <div class="info-row">
+        <div class="info-item">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" value="John Doe" disabled>
+        </div>
+        <div class="info-item">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" value="john.doe@example.com" disabled>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-item">
+          <label for="school">School Name</label>
+          <input type="text" id="school" name="school" value="University of Example" disabled>
+        </div>
+        <div class="info-item">
+          <label for="stream">Stream</label>
+          <input type="text" id="stream" name="stream" value="Computer Science" disabled>
+        </div>
+      </div>
+    </div>
+
+    <div id="wishlist" class="section">
+      <h2>WISHLIST</h2>
+    </div>
+
+    <div id="recommendations" class="section">
+      <h2>RECOMMENDATIONS</h2>
+    </div>
+
+    <div id="ongoing-events" class="section">
+      <h2>ON GOING EVENTS</h2>
+    </div>
+
+    <div id="past-events" class="section">
+      <h2>PAST EVENTS</h2>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2024 Career Explorer. All rights reserved.</p>
+</footer>
+
+<script src="profile.js"></script>
+</body>
+</html>
